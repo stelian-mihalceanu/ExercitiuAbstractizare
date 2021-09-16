@@ -6,7 +6,7 @@ import java.util.ArrayList;
 public class User implements Orders, ReturnOrder, WishList{
     private String email;
     private String username;
-    private String password;
+    private final String password;
     private String homeAddress;
 
     public User(String email, String katPart1, String password, String homeAddress) {
@@ -34,10 +34,6 @@ public class User implements Orders, ReturnOrder, WishList{
 
     public String getPassword() {
         return password;
-    }
-
-    public void setPassword(String password) {
-        this.password = password;
     }
 
     public String getHomeAddress() {
